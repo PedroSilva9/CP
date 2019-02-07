@@ -78,6 +78,7 @@ fmap' f (Fork (l,r)) = Fork (fmap' f l, fmap' f r)
 --b) f = foldr : []
 -- apenas reescreve a lista, f l == id l
 
+--EX7
 concat' :: [[a]] -> [a]
 concat' [] = []
 concat' (h:t) = h ++ concat' t
