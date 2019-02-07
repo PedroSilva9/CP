@@ -36,7 +36,7 @@ import Data.List
 
 --EX2
 length' :: [a] -> Int
-length' = foldr (\x acc -> succ acc) 0
+length' = foldr (\_ acc -> succ acc) 0
 
 reverse' :: [a] -> [a]
 reverse' = foldl (\acc x -> x : acc) []
