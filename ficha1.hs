@@ -25,7 +25,7 @@ import Data.List
  - g (x,y) = x + y
  - f = succ . (2*)
  -
- - (f . g) (x,y) = succ . (2*) $ (x + y) = 2 * (x+1 + y+1)
+ - (f . g) (x,y) = succ . (2*) $ (x + y) = 1 + 2 * (x + y)
 -}
 
 --b)
