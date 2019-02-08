@@ -113,4 +113,4 @@ m'' f l = map f l
 -- função que recebe uma lista de a's e tranforma numa lista de listas de a's
 -- e.g. f [1,2,3] == [[1],[2],[3]]
 
---d) A função descrita acima faz o contrário da função contrário, logo concat . f $ l == id l
+--d) A função descrita acima faz o contrário da função concat, logo concat . f $ l == id l
