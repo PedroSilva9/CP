@@ -65,7 +65,7 @@ flatten (Leaf a) = [a]
 flatten (Fork (l,r)) = flatten l ++ flatten r
 
 mirror :: LTree a -> LTree a
-mirror (Fork (l,r)) = Fork (mirror l, mirror r)
+mirror (Fork (l,r)) = Fork (mirror r, mirror l)
 mirror x = x
 
 fmap' :: (b->a) -> LTree b -> LTree a
